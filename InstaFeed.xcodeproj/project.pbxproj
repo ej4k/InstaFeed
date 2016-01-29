@@ -9,24 +9,24 @@
 /* Begin PBXBuildFile section */
 		1A2BA9711C51EDD400A0FBFE /* instaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2BA9701C51EDD400A0FBFE /* instaCell.swift */; };
 		1AEDC8F21C51D6F400B8F163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDC8F11C51D6F400B8F163 /* AppDelegate.swift */; };
-		1AEDC8F41C51D6F400B8F163 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDC8F31C51D6F400B8F163 /* PhotosViewController.swift */; };
 		1AEDC8F71C51D6F400B8F163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDC8F51C51D6F400B8F163 /* Main.storyboard */; };
 		1AEDC8F91C51D6F400B8F163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDC8F81C51D6F400B8F163 /* Assets.xcassets */; };
 		1AEDC8FC1C51D6F400B8F163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEDC8FA1C51D6F400B8F163 /* LaunchScreen.storyboard */; };
 		3D2DD85068792EE4787B7A0B /* Pods_InstaFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C06D52FAA40EAA1A2E16990F /* Pods_InstaFeed.framework */; };
+		A0EFAA0F1C52193500D43476 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EFAA0E1C52193500D43476 /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A2BA9701C51EDD400A0FBFE /* instaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = instaCell.swift; sourceTree = "<group>"; };
 		1AEDC8EE1C51D6F400B8F163 /* InstaFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AEDC8F11C51D6F400B8F163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1AEDC8F31C51D6F400B8F163 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		1AEDC8F61C51D6F400B8F163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AEDC8F81C51D6F400B8F163 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AEDC8FB1C51D6F400B8F163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AEDC8FD1C51D6F400B8F163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C93FAA7DFB16D1D1BFC2FE4 /* Pods-InstaFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstaFeed/Pods-InstaFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		4AC134C165A2E777FB1AF4D7 /* Pods-InstaFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaFeed/Pods-InstaFeed.release.xcconfig"; sourceTree = "<group>"; };
+		A0EFAA0E1C52193500D43476 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		C06D52FAA40EAA1A2E16990F /* Pods_InstaFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,11 +73,11 @@
 			children = (
 				1A2BA96F1C51EDA500A0FBFE /* Views */,
 				1AEDC8F11C51D6F400B8F163 /* AppDelegate.swift */,
-				1AEDC8F31C51D6F400B8F163 /* PhotosViewController.swift */,
 				1AEDC8F51C51D6F400B8F163 /* Main.storyboard */,
 				1AEDC8F81C51D6F400B8F163 /* Assets.xcassets */,
 				1AEDC8FA1C51D6F400B8F163 /* LaunchScreen.storyboard */,
 				1AEDC8FD1C51D6F400B8F163 /* Info.plist */,
+				A0EFAA0E1C52193500D43476 /* PhotosViewController.swift */,
 			);
 			path = InstaFeed;
 			sourceTree = "<group>";
@@ -222,8 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0EFAA0F1C52193500D43476 /* PhotosViewController.swift in Sources */,
 				1A2BA9711C51EDD400A0FBFE /* instaCell.swift in Sources */,
-				1AEDC8F41C51D6F400B8F163 /* PhotosViewController.swift in Sources */,
 				1AEDC8F21C51D6F400B8F163 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

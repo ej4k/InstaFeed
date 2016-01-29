@@ -12,8 +12,9 @@ class instaCell: UITableViewCell{
     
     
     @IBOutlet weak var theImageView: UIImageView!
-   
-//    @IBOutlet weak var theImageView: UIImageView!
+    
+    @IBOutlet weak var usernameLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -16,12 +16,12 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     var InstaPhotos: [NSDictionary]?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-       tableView.rowHeight = 320;
+        tableView.rowHeight = 320;
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -42,7 +42,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
                         data, options:[]) as? NSDictionary {
                             NSLog("response: \(responseDictionary)")
                             
-                            self.InstaPhotos = responseDictionary["data"] as! [NSDictionary]
+                            self.InstaPhotos = responseDictionary["data"] as? [NSDictionary]
                             self.tableView.reloadData()
                             
                     }
@@ -50,7 +50,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         });
         task.resume()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -70,12 +70,37 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("instaCell", forIndexPath: indexPath) as! instaCell
         
+        
         let Photo = InstaPhotos![indexPath.row]
+      //  let user_name = Photo["user.username"] as! String
+        
+        
+    //    cell.usernameLabel.text = user_name
+        
+        let baseUrl = Photo.valueForKeyPath("images.low_resolution.url") as! String
+        // if let posterPath = Photo["user.profile_picture"] as? String {
+            let imageUrl = NSURL(string: baseUrl)
+            
+            
+            cell.theImageView.setImageWithURL(imageUrl!)
+            
+     //   }
 
+        
         print("row \(indexPath.row)")
         return cell
+    
     }
-
-
+    
+    
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        if let Photos = InstaPhotos{
+            return Photos.count
+        } else {
+            return 0
+        }
+    }
+    
 }
 
